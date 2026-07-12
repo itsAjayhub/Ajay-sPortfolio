@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import ContactPage from './ContactPage';
+import ProjectsPage from './ProjectsPage';
+
 const profile = {
   name: 'Ajay Kumar',
   title: 'Full-Stack Developer',
@@ -26,6 +30,20 @@ const projects = [
 ];
 
 function App() {
+  const [page, setPage] = useState('home');
+
+  const goHome = () => setPage('home');
+  const goProjects = () => setPage('projects');
+  const goContact = () => setPage('contact');
+
+  if (page === 'projects') {
+    return <ProjectsPage projects={projects} onBack={goHome} />;
+  }
+
+  if (page === 'contact') {
+    return <ContactPage profile={profile} onBack={goHome} />;
+  }
+
   return (
     <div className="page">
       <header className="hero">
@@ -35,8 +53,8 @@ function App() {
           <h2>{profile.title}</h2>
           <p className="bio">{profile.bio}</p>
           <div className="actions">
-            <a href="#projects" className="btn primary">View Projects</a>
-            <a href={`mailto:${profile.email}`} className="btn secondary">Contact Me</a>
+            <button type="button" className="btn primary" onClick={goProjects}>View Projects</button>
+            <button type="button" className="btn primary" onClick={goContact}>Contact Me</button>
           </div>
         </div>
       </header>
@@ -63,7 +81,7 @@ function App() {
           </div>
         </section>
 
-        <section id="projects" className="card">
+        <section className="card">
           <h3>Featured Projects</h3>
           <div className="project-grid">
             {projects.map((project) => (
