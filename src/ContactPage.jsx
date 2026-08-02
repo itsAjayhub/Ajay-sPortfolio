@@ -1,4 +1,4 @@
-function ContactPage({ profile, onBack }) {
+function ContactPage({ profile }) {
   return (
     <div className="page">
       <header className="hero">
@@ -6,9 +6,6 @@ function ContactPage({ profile, onBack }) {
           <p className="eyebrow">Contact Me</p>
           <h1>Let&apos;s get in touch</h1>
           <p className="bio">Ready to collaborate? Use the details below to connect.</p>
-          <div className="actions">
-            <button type="button" className="btn primary" onClick={onBack}>Back Home</button>
-          </div>
         </div>
       </header>
 

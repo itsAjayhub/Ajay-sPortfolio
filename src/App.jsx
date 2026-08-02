@@ -5,10 +5,10 @@ import ProjectsPage from './ProjectsPage';
 const profile = {
   name: 'Ajay Kumar',
   title: 'Full-Stack Developer',
-  location: 'India',
-  email: 'your.email@example.com',
-  github: 'https://github.com/yourusername',
-  linkedin: 'https://linkedin.com/in/yourusername',
+  location: 'BHOPAL',
+  email: 'AJAYDEVRAJSARATHE@GMAIL.COM',
+  github: 'AJAY SARATHE',
+  linkedin: 'itsAjayhub',
   bio: 'I build modern web applications with a focus on clean design, strong user experience, and reliable performance.',
 };
 

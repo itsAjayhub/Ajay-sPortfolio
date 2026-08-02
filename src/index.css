@@ -38,6 +38,20 @@ h2 { font-size: clamp(1.1rem, 2vw, 1.6rem); margin: 0 0 12px; color: #cbd5e1; }
 .bio { max-width: 680px; font-size: 1.05rem; color: #e2e8f0; }
 
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.hero-top { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.16);
+  color: #bae6fd;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 .btn {
   display: inline-block;
   padding: 10px 16px;
