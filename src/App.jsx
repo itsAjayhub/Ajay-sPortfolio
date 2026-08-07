@@ -5,10 +5,13 @@ import ProjectsPage from './ProjectsPage';
 const profile = {
   name: 'Ajay Kumar',
   title: 'Full-Stack Developer',
+
+  
   location: 'BHOPAL',
   email: 'AJAYDEVRAJSARATHE@GMAIL.COM',
-  github: 'AJAY SARATHE',
-  linkedin: 'itsAjayhub',
+  mobile: '+91 12345 67890',
+  github: 'https://github.com/itsAjayhub',
+  linkedin: 'https://in.linkedin.com/in/ajay-sarathe-223b83292?trk=people-guest_people_search-card',
   bio: 'I build modern web applications with a focus on clean design, strong user experience, and reliable performance.',
 };
 

@@ -38,7 +38,12 @@ h2 { font-size: clamp(1.1rem, 2vw, 1.6rem); margin: 0 0 12px; color: #cbd5e1; }
 .bio { max-width: 680px; font-size: 1.05rem; color: #e2e8f0; }
 
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
-.hero-top { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
 .icon-btn {
   display: inline-flex;
   align-items: center;
